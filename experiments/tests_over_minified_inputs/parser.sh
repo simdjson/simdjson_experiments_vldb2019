@@ -1,7 +1,7 @@
 #!/bin/bash
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 cd $SCRIPTPATH/../../library/simdjson
-make parsingcompetition minify jsonstats
+make -k parsingcompetition minify jsonstats
 echo 
 for i in jsonexamples/*.json; do
     [ -f "$i" ] || break
