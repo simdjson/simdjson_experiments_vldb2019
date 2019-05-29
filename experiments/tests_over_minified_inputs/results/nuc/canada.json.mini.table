@@ -1,4 +1,0 @@
-name                                            cycles_per_byte  cycles_per_byte_err             gb_per_s         gb_per_s_err 
-"simdjson                                "                6.172                0.485                0.358                0.026 
-"RapidJSON (insitu)                      "               12.908                0.204                0.171                0.003 
-"sajson                                  "                7.805                0.208                0.283                0.007 
