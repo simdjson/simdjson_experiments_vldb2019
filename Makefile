@@ -1,7 +1,7 @@
 all: tests_over_minified_inputs
 
 checkht: 
-	scripts/ht.py	
+	./scripts/ht.py	
 
 .PHONY: checkht
 

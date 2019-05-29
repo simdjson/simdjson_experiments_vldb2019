@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/usr/bin/env python
 # https://unix.stackexchange.com/questions/33450/checking-if-hyperthreading-is-enabled-or-not
 
 import re
