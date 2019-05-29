@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: gcc:8
+  commands:
+  - make -j2
+  - make quiettest -j2
+  - make amalgamate
