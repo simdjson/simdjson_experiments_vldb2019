@@ -1,4 +1,4 @@
-Execute the `compute.py` script while in this directory.
+Execute the `compute.py` script while in this directory. Results are in millions of CPU cycles.
 
 ```
                                                  original   minified
