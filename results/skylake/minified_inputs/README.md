@@ -42,7 +42,6 @@ mesh.pretty
  RapidJSON (insitu)                        (48) :    8.50  6.56 
  sajson                                    (48) :    5.61  4.08 
 
-```
 random
  simdjson                                  (90) :    1.22  1.19 
  RapidJSON (insitu)                        (90) :    2.96  2.91 
