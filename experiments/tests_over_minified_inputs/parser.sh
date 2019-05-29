@@ -9,15 +9,17 @@ for i in jsonexamples/*.json; do
     echo $i
     echo -n "#"
     ./jsonstats $i
-    ./parsingcompetition  -t  $i
+    ./parsingcompetition    $i
+    ./parsingcompetition -t 
     echo "# minifying"
     ./minify $i > $i.minified
     echo -n "#"
     echo $i.minified
     echo -n "#"
     ./jsonstats $i.minified
-    ./parsingcompetition -t $i.minified
-    echo
+    ./parsingcompetition  $i.minified
+    ./parsingcompetition -t  $i.minified
+     echo
     echo "# ========"
     echo
 done
