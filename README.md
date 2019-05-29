@@ -5,8 +5,8 @@ These are detailed experiments done over simdjson.
 We use a simple Makefile to execute the docker scripts.
 
 Requirements:
-- Linux
-- Docker (we need privileged access).
+- Linux 
+- Docker (you need privileged access).
 
 Hardware:
 - AVX2-compatible processing (Intel, AMD).
