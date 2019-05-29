@@ -11,7 +11,7 @@ for i in jsonexamples/*.json; do
     mininame=$(basename $i .json)".mini.json"
     miniresult=$(basename $i .json)".mini.table"
     ./minify $i > $mininame
-    ./parsingcompetition -t  $i.minified > $RESULTSPATH/$miniresult
+    ./parsingcompetition -t  $mininame > $RESULTSPATH/$miniresult
     echo -n "."
 done
 echo
