@@ -1,11 +1,22 @@
 nodename:=$(shell uname -n)
 
-all: time_distribution minified_inputs
+all: stacked_plot time_distribution minified_inputs
 
 checkht: 
 	./scripts/ht.py	
 
 .PHONY: checkht
+
+
+stacked_plot: checkht
+	git submodule update --init --recursive
+	cd library/simdjson && make clean && cd ../..
+	docker build  -f experiments/stacked_plot/Dockerfile -t stacked_plot .
+	$(eval outputdir:=$(PWD)/results/$(nodename)/stacked_plot)
+	@echo $(outputdir)
+	mkdir -p $(outputdir)
+	docker run --privileged -v $(outputdir):/results stacked_plot
+	@echo "results have been copied to $(outputdir)"
 
 
 
