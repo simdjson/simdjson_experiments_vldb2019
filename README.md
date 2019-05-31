@@ -8,7 +8,7 @@ We use a simple Makefile to execute the docker scripts.
 
 The experimental results are in the `result` directory. The code for the experiments is in the `experiments` directory.
 
-There is a distinct directory called `analysis` that contain the scripts processing the resutlts from the `result` directory.
+There is a distinct directory called `analysis` that contain the scripts processing the resutlts from the `result` directory. The analysis scripts have dependencies: python, pandas, gnuplot. 
 
 ## Requirements
 
