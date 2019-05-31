@@ -6,6 +6,7 @@ for i in jsonexamples/*.json; do
     [ -f "$i" ] || break
     shortname=$(basename $i .json).table
     ./parsingcompetition -t $i > $RESULTSPATH/$shortname
+    ./parsingcompetition  $i > $RESULTSPATH/detailed$shortname
     ./allparsingcompetition -t $i > $RESULTSPATH/all$shortname
     echo -n "."
 done
