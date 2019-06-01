@@ -1,11 +1,23 @@
 nodename:=$(shell uname -n)
 
-all: distinct_id stacked_plot time_distribution minified_inputs comparison
+all: distinct_id stacked_plot time_distribution minified_inputs comparison large_files
 
 checkht: 
 	./scripts/ht.py	
 
 .PHONY: checkht
+
+large_files: checkht
+	git submodule update --init --recursive
+	cd library/simdjson && make clean && cd ../..
+	docker build  -f experiments/large_files/Dockerfile -t large_files .
+	$(eval outputdir:=$(PWD)/results/$(nodename)/large_files)
+	@echo $(outputdir)
+	mkdir -p $(outputdir)
+	docker run --privileged -v $(outputdir):/results large_files
+	@echo "results have been copied to $(outputdir)"
+
+
 
 distinct_id: checkht
 	git submodule update --init --recursive
