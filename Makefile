@@ -1,6 +1,6 @@
 nodename:=$(shell uname -n)
 
-all: fast_flatten distinct_id stacked_plot time_distribution minified_inputs comparison large_files clmul vectorized_classification
+all: turbo fast_flatten distinct_id stacked_plot time_distribution minified_inputs comparison large_files clmul vectorized_classification
 
 checkht: 
 	-./scripts/ht.py	
