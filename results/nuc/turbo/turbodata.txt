@@ -1,0 +1,78 @@
+CPUID highest leaf  : [16h]
+Running as root     : [YES]
+MSR reads supported : [YES]
+CPU pinning enabled : [YES]
+CPU supports AVX2   : [YES]
+CPU supports AVX-512: [YES]
+cpuid = eax = 2, ebx = 184, ecx = 24000000, edx = 0
+tsc_freq = 2208.0 MHz (from cpuid leaf 0x15)
+CPU brand string: Intel(R) Core(TM) i3-8121U CPU @ 2.20GHz
+4 available CPUs: [0, 1, 2, 3]
+2 physical cores: [0, 1]
+Will test up to 2 CPUs
+Cores | ID                  | Description                    | OVRLP1 | OVRLP2 | OVRLP3 | Mops | A/M-ratio | A/M-MHz | M/tsc-ratio
+1     | ucomis              | SSE scalar ucomis loop         |  1.000 |  1.000 | 1.000  |  773 |      1.42 |    3134 | 0.99       
+1     | ucomis_vex          | VEX scalar ucomis loop         |  1.000 |  1.000 | 1.000  | 1064 |      1.45 |    3211 | 0.99       
+1     | pause_only          | pause instruction              |  1.000 |  1.000 | 1.000  | 1947 |      1.45 |    3212 | 0.99       
+1     | scalar_iadd         | Scalar integer adds            |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+1     | avx128_mov_sparse   | 128-bit reg-reg mov            |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+1     | avx128_merge_sparse | 128-bit reg-reg merge mov      |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3211 | 0.99       
+1     | avx128_iadd         | 128-bit integer serial adds    |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+1     | avx128_iadd_t       | 128-bit integer parallel adds  |  1.000 |  1.000 | 1.000  | 9579 |      1.45 |    3212 | 0.99       
+1     | avx128_imul         | 128-bit integer muls           |  1.000 |  1.000 | 1.000  |  638 |      1.45 |    3211 | 0.99       
+1     | avx128_fma_sparse   | 128-bit 64-bit sparse FMAs     |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+1     | avx128_fma          | 128-bit serial DP FMAs         |  1.000 |  1.000 | 1.000  |  798 |      1.45 |    3211 | 0.99       
+1     | avx128_fma_t        | 128-bit parallel DP FMAs       |  1.000 |  1.000 | 1.000  | 6384 |      1.45 |    3210 | 0.97       
+1     | avx256_mov_sparse   | 256-bit reg-reg mov            |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+1     | avx256_merge_sparse | 256-bit reg-reg merge mov      |  1.000 |  1.000 | 1.000  | 3192 |      1.45 |    3212 | 0.99       
+1     | avx256_iadd         | 256-bit integer serial adds    |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+1     | avx256_iadd_t       | 256-bit integer parallel adds  |  1.000 |  1.000 | 1.000  | 9581 |      1.45 |    3212 | 0.99       
+1     | avx256_imul         | 256-bit integer muls           |  1.000 |  1.000 | 1.000  |  639 |      1.45 |    3211 | 0.98       
+1     | avx256_fma_sparse   | 256-bit 64-bit sparse FMAs     |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3201 | 0.99       
+1     | avx256_fma          | 256-bit serial DP FMAs         |  1.000 |  1.000 | 1.000  |  798 |      1.45 |    3211 | 0.99       
+1     | avx256_fma_t        | 256-bit parallel DP FMAs       |  1.000 |  1.000 | 1.000  | 6384 |      1.45 |    3212 | 0.99       
+1     | avx512_iadd         | 512-bit integer adds           |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+1     | avx512_imul         | 512-bit integer muls           |  1.000 |  1.000 | 1.000  |  639 |      1.45 |    3211 | 0.99       
+1     | avx512_fma_sparse   | 512-bit 64-bit sparse FMAs     |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3211 | 0.99       
+1     | avx512_fma          | 512-bit serial DP FMAs         |  1.000 |  1.000 | 1.000  |  773 |      1.41 |    3111 | 0.99       
+1     | avx512_fma_t        | 512-bit parallel DP FMAs       |  1.000 |  1.000 | 1.000  | 3093 |      1.41 |    3111 | 0.99       
+1     | avx512_vpermw       | 512-bit serial  WORD permute   |  1.000 |  1.000 | 1.000  |  798 |      1.45 |    3211 | 0.99       
+1     | avx512_vpermw_t     | 512-bit parallel WORD permute  |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+1     | avx512_vpermd       | 512-bit serial DWORD permute   |  1.000 |  1.000 | 1.000  | 1064 |      1.45 |    3212 | 0.99       
+1     | avx512_vpermd_t     | 512-bit parallel DWORD permute |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3210 | 0.99       
+1     | avx512_mov_sparse   | 512-bit reg-reg mov            |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+1     | avx512_merge_sparse | 512-bit reg-reg merge mov      |  1.000 |  1.000 | 1.000  | 3193 |      1.45 |    3212 | 0.99       
+
+Cores | ID                  | Description                    | OVRLP1 | OVRLP2 | OVRLP3 |       Mops |    A/M-ratio |    A/M-MHz | M/tsc-ratio
+2     | ucomis              | SSE scalar ucomis loop         |  0.999 |  0.998 | 1.000  |  773,  773 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | ucomis_vex          | VEX scalar ucomis loop         |  0.999 |  0.997 | 1.000  | 1031, 1031 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | pause_only          | pause instruction              |  0.999 |  1.000 | 1.000  | 1886, 1886 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | scalar_iadd         | Scalar integer adds            |  0.999 |  0.999 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx128_mov_sparse   | 128-bit reg-reg mov            |  0.999 |  1.000 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx128_merge_sparse | 128-bit reg-reg merge mov      |  0.999 |  1.000 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx128_iadd         | 128-bit integer serial adds    |  0.999 |  1.000 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx128_iadd_t       | 128-bit integer parallel adds  |  0.999 |  0.999 | 1.000  | 9268, 9266 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx128_imul         | 128-bit integer muls           |  0.999 |  0.999 | 1.000  |  619,  619 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx128_fma_sparse   | 128-bit 64-bit sparse FMAs     |  0.999 |  1.000 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx128_fma          | 128-bit serial DP FMAs         |  0.999 |  0.999 | 1.000  |  773,  773 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx128_fma_t        | 128-bit parallel DP FMAs       |  0.999 |  0.999 | 1.000  | 6187, 6186 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx256_mov_sparse   | 256-bit reg-reg mov            |  0.999 |  1.000 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx256_merge_sparse | 256-bit reg-reg merge mov      |  0.999 |  0.999 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx256_iadd         | 256-bit integer serial adds    |  0.999 |  1.000 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx256_iadd_t       | 256-bit integer parallel adds  |  0.999 |  0.999 | 1.000  | 9286, 9289 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx256_imul         | 256-bit integer muls           |  1.000 |  0.996 | 1.000  |  619,  619 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx256_fma_sparse   | 256-bit 64-bit sparse FMAs     |  0.999 |  1.000 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx256_fma          | 256-bit serial DP FMAs         |  0.999 |  1.000 | 1.000  |  773,  773 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx256_fma_t        | 256-bit parallel DP FMAs       |  1.000 |  0.997 | 1.000  | 6185, 6185 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_iadd         | 512-bit integer adds           |  0.999 |  1.000 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_imul         | 512-bit integer muls           |  0.999 |  0.999 | 1.000  |  619,  619 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_fma_sparse   | 512-bit 64-bit sparse FMAs     |  0.999 |  0.999 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_fma          | 512-bit serial DP FMAs         |  0.999 |  0.999 | 1.000  |  773,  773 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_fma_t        | 512-bit parallel DP FMAs       |  0.999 |  0.999 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_vpermw       | 512-bit serial  WORD permute   |  0.999 |  0.999 | 1.000  |  773,  773 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_vpermw_t     | 512-bit parallel WORD permute  |  0.999 |  0.999 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_vpermd       | 512-bit serial DWORD permute   |  0.999 |  0.999 | 1.000  | 1031, 1031 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_vpermd_t     | 512-bit parallel DWORD permute |  0.999 |  0.999 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_mov_sparse   | 512-bit reg-reg mov            |  0.999 |  0.999 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+2     | avx512_merge_sparse | 512-bit reg-reg merge mov      |  0.999 |  0.999 | 1.000  | 3093, 3093 |  1.41,  1.41 | 3111, 3111 | 0.99, 0.99 
+

@@ -1,0 +1,13 @@
+simdjson (dynamic mem)                  	:    0.981 cycles per input byte (best)    1.163 cycles per input byte (avg)    2.248 GB/s (error margin: 0.351 GB/s)
+simdjson                                	:    0.972 cycles per input byte (best)    1.075 cycles per input byte (avg)    2.269 GB/s (error margin: 0.217 GB/s)
+RapidJSON                               	:    2.668 cycles per input byte (best)    2.923 cycles per input byte (avg)    0.827 GB/s (error margin: 0.072 GB/s)
+RapidJSON (insitu)                      	:    2.670 cycles per input byte (best)    2.804 cycles per input byte (avg)    0.827 GB/s (error margin: 0.039 GB/s)
+sajson (dynamic mem)                    	:    2.220 cycles per input byte (best)    2.308 cycles per input byte (avg)    0.994 GB/s (error margin: 0.039 GB/s)
+sajson                                  	:    1.989 cycles per input byte (best)    2.048 cycles per input byte (avg)    1.110 GB/s (error margin: 0.032 GB/s)
+memcpy                                  	:    0.098 cycles per input byte (best)    0.108 cycles per input byte (avg)   22.295 GB/s (error margin: 2.100 GB/s)
+
+ 
+ <doing additional analysis with performance counters (Linux only)>
+simdjson : cycles    2449141 instructions    9087398 branchmisses       1944 cacheref     117942 cachemisses       8265  bytespercachemiss        888 inspercycle        3.7 insperbyte        5.3
+RapidJSON: cycles    6857726 instructions   20211577 branchmisses      42895 cacheref      39213 cachemisses      18480  bytespercachemiss         40 inspercycle        2.9 insperbyte       11.7
+sajson   : cycles    4958921 instructions   19154172 branchmisses       4781 cacheref      57390 cachemisses      16770  bytespercachemiss        361 inspercycle        3.9 insperbyte       11.1

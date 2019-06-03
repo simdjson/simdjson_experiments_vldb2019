@@ -1,0 +1,43 @@
+
+#jsonexamples/apache_builds.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+2 0 5289 26 0 884 3 0 2 1 127275 12365 97205.261000 355107.041000 102041.134000 355038.074000 
+#jsonexamples/canada.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+46 111080 12 0 0 4 56045 0 0 0 2251051 334374 1982778.740000 6962224.900000 5658888.580000 22148238.780000 
+#jsonexamples/citm_catalog.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+14392 0 26604 2 348 10937 10451 1263 0 0 1727204 135991 1210148.900000 4583366.060000 1249019.720000 4504037.020000 
+#jsonexamples/github_events.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+149 0 1891 155 4 180 19 24 57 7 65132 4657 45621.111000 170550.017000 46227.731000 146894.035000 
+#jsonexamples/gsoc-2018.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+0 0 34128 15023 0 3793 0 0 0 0 3327831 75842 2078588.760000 7085901.220000 1684083.360000 3649067.200000 
+#jsonexamples/instruments.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+4935 0 6889 0 0 1012 194 431 17 109 220346 27174 170663.195000 628949.078000 207388.999000 775038.127000 
+#jsonexamples/marine_ik.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+130225 114950 38268 0 0 9680 28377 0 6 0 2983466 643013 2882336.660000 10205534.760000 8729685.280000 29902730.460000 
+#jsonexamples/mesh.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+40613 32400 11 0 0 3 3610 0 0 0 723597 153275 633870.756000 2368891.354000 2145012.743000 7984830.885000 
+#jsonexamples/mesh.pretty.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+40613 32400 11 0 0 3 3610 0 0 0 1577353 153275 1153291.100000 4364185.340000 2754435.060000 9834384.940000 
+#jsonexamples/numbers.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+0 10001 0 0 0 0 1 0 0 0 150124 20004 118267.701000 431236.058000 382397.068000 1321165.162000 
+#jsonexamples/random.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+5002 0 33005 0 103482 4001 1001 0 495 505 510476 88018 606691.509000 2122041.275000 678622.325000 2437964.454000 
+#jsonexamples/twitter.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+2108 1 18099 1230 95406 1264 1050 1946 345 2446 631514 55264 531167.996000 1901701.222000 473959.558000 1558601.325000 
+#jsonexamples/twitterescaped.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+2108 1 18099 33048 0 1264 1050 1946 345 2446 562408 55264 415294.411000 1491078.189000 1333499.809000 3683284.606000 
+#jsonexamples/update-center.json
+# integer_count float_count string_count backslash_count nonasciibyte_count object_count array_count null_count true_count false_count byte_count structural_indexes_count   stage1_cycle_count stage1_instruction_count  stage2_cycle_count  stage2_instruction_count  stage3_cycle_count stage3_instruction_count  
+0 0 27229 284 49 1896 1937 0 134 252 533178 63420 425220.263000 1509277.179000 595073.772000 1809938.394000 
