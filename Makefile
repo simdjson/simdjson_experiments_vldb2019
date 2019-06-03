@@ -10,6 +10,7 @@ checkht:
 turbo: 
 	cd experiments/turbo && docker build -t turbo .
 	$(eval outputdir:=$(PWD)/results/$(nodename)/turbo)
+	mkdir -p $(outputdir)
 	docker run --privileged -v $(outputdir):/results turbo
 	@echo "results have been copied to $(outputdir)"
 
