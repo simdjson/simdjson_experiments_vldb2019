@@ -1,0 +1,28 @@
+#jsonexamples/apache_builds.json
+"apache_builds"	0.006579	0.832366	0.833657	1.672602	2.237527
+#jsonexamples/canada.json
+"canada"	0.000967	0.948984	2.649692	3.599643	1.048211
+#jsonexamples/citm_catalog.json
+"citm_catalog"	0.001193	0.783211	0.760015	1.544419	2.458108
+#jsonexamples/github_events.json
+"github_events"	0.011059	0.765591	0.721165	1.497815	2.542927
+#jsonexamples/gsoc-2018.json
+"gsoc-2018"	0.000685	0.669116	0.553792	1.223593	3.155557
+#jsonexamples/instruments.json
+"instruments"	0.003194	0.843736	0.960669	1.807599	2.057808
+#jsonexamples/marine_ik.json
+"marine_ik"	0.000913	1.092456	2.956177	4.049545	0.937626
+#jsonexamples/mesh.json
+"mesh"	0.001553	1.071939	2.946515	4.020006	0.922966
+#jsonexamples/mesh.pretty.json
+"mesh.pretty"	0.001361	0.816243	1.788521	2.606124	1.443247
+#jsonexamples/numbers.json
+"numbers"	0.004602	0.863842	2.549867	3.418311	1.085433
+#jsonexamples/random.json
+"random"	0.001384	1.259001	1.390370	2.650755	1.397263
+#jsonexamples/twitter.json
+"twitter"	0.001122	0.920518	0.787367	1.709006	2.174672
+#jsonexamples/twitterescaped.json
+"twitterescaped"	0.001357	0.863998	2.339524	3.204879	1.157001
+#jsonexamples/update-center.json
+"update-center"	0.001321	0.870694	1.151503	2.023517	1.834345
