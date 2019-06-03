@@ -1,11 +1,22 @@
 nodename:=$(shell uname -n)
 
-all: distinct_id stacked_plot time_distribution minified_inputs comparison large_files
+all: fast_flatten distinct_id stacked_plot time_distribution minified_inputs comparison large_files
 
 checkht: 
-	./scripts/ht.py	
+	-./scripts/ht.py	
 
 .PHONY: checkht
+
+fast_flatten: checkht
+	git submodule update --init --recursive
+	cd library/simdjson && make clean && cd ../..
+	docker build  -f experiments/fast_flatten/Dockerfile -t fast_flatten .
+	$(eval outputdir:=$(PWD)/results/$(nodename)/fast_flatten)
+	@echo $(outputdir)
+	mkdir -p $(outputdir)
+	docker run --privileged -v $(outputdir):/results fast_flatten
+	@echo "results have been copied to $(outputdir)"
+
 
 large_files: checkht
 	git submodule update --init --recursive
