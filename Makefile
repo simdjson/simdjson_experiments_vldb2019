@@ -1,11 +1,29 @@
 nodename:=$(shell uname -n)
 
-all: fast_flatten distinct_id stacked_plot time_distribution minified_inputs comparison large_files clmul
+all: fast_flatten distinct_id stacked_plot time_distribution minified_inputs comparison large_files clmul vectorized_classification
 
 checkht: 
 	-./scripts/ht.py	
 
 .PHONY: checkht
+
+turbo: 
+	cd experiments/turbo && docker build -t turbo .
+	$(eval outputdir:=$(PWD)/results/$(nodename)/turbo)
+	docker run --privileged -v $(outputdir):/results turbo
+	@echo "results have been copied to $(outputdir)"
+
+vectorized_classification: checkht
+	git submodule update --init --recursive
+	cd library/simdjson && make clean && cd ../..
+	docker build  -f experiments/vectorized_classification/Dockerfile -t vectorized_classification .
+	$(eval outputdir:=$(PWD)/results/$(nodename)/vectorized_classification)
+	@echo $(outputdir)
+	mkdir -p $(outputdir)
+	docker run --privileged -v $(outputdir):/results vectorized_classification
+	@echo "results have been copied to $(outputdir)"
+
+
 
 clmul: checkht
 	git submodule update --init --recursive
