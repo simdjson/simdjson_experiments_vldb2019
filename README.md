@@ -1,4 +1,4 @@
-# simdjson_experiments_vldb2019
+# simdjson experiments for VLDB Journal
 
 These are detailed experiments done over the simdjson code base for the paper [Parsing gigabytes of JSON per second](https://arxiv.org/abs/1902.08318).
 
