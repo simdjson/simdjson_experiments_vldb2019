@@ -10,6 +10,7 @@ if [[ -d $dir ]]; then
   myfile=$dir/stacked_plot/parselinuxtable.txt 
   plotdirectory=$SCRIPTPATH/$(basename $dir)
   mkdir -p $plotdirectory
+  echo "printing data from "$myfile
   gnuplot -e "filename='$myfile';name='$plotdirectory/stackedperf.pdf'" $SCRIPTPATH/stackbar.gnuplot
   echo $plotdirectory/stackedperf.pdf
 fi 

@@ -19,20 +19,17 @@ set border 3 back linestyle 80 # Remove border on top and right.  These
 set xtics nomirror
 set ytics nomirror
 
-#set yrange [0:]
+set yrange [0:4]
 #set key right top;
 set key  samplen 1 spacing 1  font ",10"
-#set key width -4
-#set key height -0.3
 
 #set key horizontal invert
 
 set key maxrows 8
 set key noenhanced
 
-set key Left opaque   at 5.4,5.2 #at 5.5,4
-#set key right top
-#set key outside
+set key Left opaque  at  5.5,4
+
 
 set style data histograms
 set style histogram rowstacked
@@ -49,19 +46,20 @@ set style line 8 lt rgb "#5060D0" lw 1 pt 1 ps 1
 
 clamp(a) = (a < 0) ? 0 : a
 
-# plot filename using 3 t "stage 1" ls 2, '' using 4 t "stage 2" ls 3, '' using 5:xtic(1) t "stage 3" ls 1
-#plot filename using ($5-$10) ls 1
-plot filename using 8 t " 1: no utf8" ls 1,\
- '' using (clamp($13-$8))  t " 1: just utf8" ls 2,\
- '' using (clamp($14 + $19 - $4)) t " 2: core" ls 4,\
- '' using (clamp($5 - $15)) t " 2: strings" ls 5,\
- '' using (clamp($4 - $14)):xtic(1) t " 2: numbers" ls 6
- 
+plot filename using 9 t " 1: no utf8" ls 1 ,\
+ '' using (clamp($3-$9))  t " 1: just utf8" ls 2 ,\
+ '' using (clamp($16 + $22 - $4)) t " 2: core" ls 4,\
+ '' using (clamp($4 - $22)) t " 2: strings" ls 5,\
+ '' using (clamp($4 - $16)):xtic(1) t " 2: numbers" ls 6
+############
+# The formulas are a bit complex, here is the 
+# description:
+#################
 #ALL:
-# 1, 2 mem, 3 st1, 4 st2, 5 total
+# 1, 2 mem, 3 st1, 4 st2, 5 total, 6 GBPS
 #NOT UTF8
-# 6, 7 mem, 8 st1, 9 st2,10 total // noutf8
+# 7, 8 mem, 9 st1, 10 st2,11 total, 12 GPBS // noutf8
 #NOT NUMBER
-# 11, 12 mem, 13 st1, 14 st2,  15 total // nonumber
+# 13, 14 mem, 15 st1, 16 st2,  17 total, 18 GPBS // nonumber
 #NOT STRING
-# 16, 17 mem, 18 st1, 19 st2,  20 total // nostring
+# 19, 20 mem, 21 st1, 22 st2,  23 total, 24 GPBS // nostring
