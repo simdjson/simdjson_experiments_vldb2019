@@ -1,4 +1,4 @@
-set term pdfcairo fontscale 0.8 noenhanced
+set term pdfcairo fontscale 0.6 noenhanced
 set output name
 set boxwidth 0.8
 set style fill solid
