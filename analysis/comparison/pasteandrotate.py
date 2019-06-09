@@ -12,7 +12,6 @@ def getdata(filename):
     return (df["gb_per_s"].tolist())
 import sys
 ourdir = sys.argv[1]
-print("grabbign files from "+ourdir)
 #ourdir=os.path.dirname(os.path.realpath(__file__))
 answer = []
 for file in os.listdir(ourdir):
