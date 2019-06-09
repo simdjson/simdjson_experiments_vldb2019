@@ -1,0 +1,66 @@
+/Users/lemire/CVS/github/simdjson_experiments_vldb2019/analysis/time_distribution/../../results/nuc
+nuc
+loading /Users/lemire/CVS/github/simdjson_experiments_vldb2019/analysis/time_distribution/../../results/nuc/time_distribution/modeltable.txt
+       integer_count    float_count    ...      total_cycles      ratio
+count      14.000000      14.000000    ...      1.400000e+01  14.000000
+mean    17156.642857   21488.071429    ...      2.742249e+06   2.379860
+std     35520.191644   40466.023650    ...      3.262328e+06   0.971953
+min         0.000000       0.000000    ...      9.184884e+04   1.130668
+25%        13.000000       0.000000    ...      6.267805e+05   1.572013
+50%      2108.000000       0.500000    ...      1.517054e+06   2.195502
+75%     12044.500000   26800.250000    ...      3.516725e+06   3.278625
+max    130225.000000  114950.000000    ...      1.161202e+07   3.892125
+
+[8 rows x 18 columns]
+chosenpredictors= ['integer_count', 'float_count', 'string_count', 'backslash_count', 'nonasciibyte_count', 'object_count', 'array_count', 'null_count', 'true_count', 'false_count', 'byte_count', 'structural_indexes_count']
+
+target =  stage1_cycle_count
+	1.7 cycles per structural_indexes_count 
+	0.59 cycles per byte_count 
+R2 =  0.995818549006906
+
+target =  stage2_cycle_count
+	17 cycles per float_count 
+	9.1 cycles per structural_indexes_count 
+	0.29 cycles per byte_count 
+R2 =  0.9877882962938874
+
+target =  total_cycles
+	17 cycles per float_count 
+	11 cycles per structural_indexes_count 
+	0.88 cycles per byte_count 
+R2 =  0.9935198938077907
+
+/Users/lemire/CVS/github/simdjson_experiments_vldb2019/analysis/time_distribution/../../results/skylake
+skylake
+loading /Users/lemire/CVS/github/simdjson_experiments_vldb2019/analysis/time_distribution/../../results/skylake/time_distribution/modeltable.txt
+       integer_count    float_count    ...      total_cycles      ratio
+count      14.000000      14.000000    ...      1.400000e+01  14.000000
+mean    17156.642857   21488.071429    ...      2.794593e+06   2.433625
+std     35520.191644   40466.023650    ...      3.296220e+06   0.969555
+min         0.000000       0.000000    ...      9.386837e+04   1.152415
+25%        13.000000       0.000000    ...      6.433721e+05   1.639402
+50%      2108.000000       0.500000    ...      1.546078e+06   2.269829
+75%     12044.500000   26800.250000    ...      3.581972e+06   3.292907
+max    130225.000000  114950.000000    ...      1.167595e+07   3.913554
+
+[8 rows x 18 columns]
+chosenpredictors= ['integer_count', 'float_count', 'string_count', 'backslash_count', 'nonasciibyte_count', 'object_count', 'array_count', 'null_count', 'true_count', 'false_count', 'byte_count', 'structural_indexes_count']
+
+target =  stage1_cycle_count
+	1.7 cycles per structural_indexes_count 
+	0.62 cycles per byte_count 
+R2 =  0.9956483988514307
+
+target =  stage2_cycle_count
+	19 cycles per float_count 
+	8.7 cycles per structural_indexes_count 
+	0.31 cycles per byte_count 
+R2 =  0.9890342734972865
+
+target =  total_cycles
+	19 cycles per float_count 
+	11 cycles per structural_indexes_count 
+	0.92 cycles per byte_count 
+R2 =  0.9938903655122668
+
