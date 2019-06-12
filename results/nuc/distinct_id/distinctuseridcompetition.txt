@@ -1,4 +1,10 @@
 name cycles_per_byte cycles_per_byte_err  gb_per_s gb_per_s_err 
-"simdjson                                "                1.686                0.136                1.308                0.097 
-"rapid                                   "                3.513                0.077                0.628                0.014 
-"sasjon                                  "                2.881                0.045                0.766                0.012 
+"simdjson                                "                1.368                0.039                1.611                0.045 
+"rapid                                   "                3.328                0.078                0.663                0.015 
+"sasjon                                  "                2.703                0.061                0.816                0.018 
+"simdjson (just parse)                   "                1.092                0.006                2.017                0.011 
+"rapid  (just parse)                     "                3.097                0.051                0.712                0.012 
+"sasjon (just parse)                     "                2.507                0.046                0.880                0.016 
+"simdjson (just dom)                     "                0.264                0.002                8.298                0.066 
+"rapid  (just dom)                       "                0.225                0.002                9.738                0.092 
+"sasjon (just dom)                       "                0.158                0.002               13.770                0.186 
