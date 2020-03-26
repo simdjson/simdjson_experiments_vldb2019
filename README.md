@@ -1,6 +1,7 @@
-# simdjson experiments for VLDB Journal
+# simdjson experiments 
 
-These are detailed experiments done over the simdjson code base for the paper [Parsing gigabytes of JSON per second](https://arxiv.org/abs/1902.08318).
+
+Originally, these were detailed experiments done over the simdjson code base for the paper [Parsing gigabytes of JSON per second](https://arxiv.org/abs/1902.08318).
 
 We use a simple Makefile to execute the docker scripts. If you have a proper configured Linux system, you should be able to generate all experimental results with a simple command:
 
