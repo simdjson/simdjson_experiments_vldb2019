@@ -1,10 +1,10 @@
 name cycles_per_byte cycles_per_byte_err  gb_per_s gb_per_s_err 
-"simdjson                                "                1.872                0.010                1.819                0.010 
-"rapid                                   "                4.775                0.025                0.713                0.004 
-"sasjon                                  "                3.796                0.026                0.897                0.006 
-"simdjson (just parse)                   "                1.543                0.007                2.206                0.009 
-"rapid  (just parse)                     "                4.433                0.024                0.769                0.004 
-"sasjon (just parse)                     "                3.534                0.023                0.964                0.006 
-"simdjson (just dom)                     "                0.289                0.001               11.730                0.058 
-"rapid  (just dom)                       "                0.312                0.002               10.850                0.064 
-"sasjon (just dom)                       "                0.218                0.001               15.459                0.103 
+"simdjson                                "                1.604                0.012                2.122                0.016 
+"rapid                                   "                6.180                0.029                0.551                0.003 
+"sasjon                                  "                4.313                0.033                0.790                0.006 
+"simdjson (just parse)                   "                1.344                0.008                2.531                0.015 
+"rapid  (just parse)                     "                5.816                0.024                0.586                0.002 
+"sasjon (just parse)                     "                4.031                0.022                0.845                0.004 
+"simdjson (just dom)                     "                0.217                0.001               15.600                0.105 
+"rapid  (just dom)                       "                0.342                0.002                9.919                0.049 
+"sasjon (just dom)                       "                0.248                0.007               13.650                0.386 

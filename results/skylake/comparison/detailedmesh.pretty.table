@@ -1,13 +1,19 @@
-simdjson (dynamic mem)                  	:    2.315 cycles per input byte (best)    2.497 cycles per input byte (avg)    1.472 GB/s (error margin: 0.107 GB/s)
-simdjson                                	:    2.316 cycles per input byte (best)    2.404 cycles per input byte (avg)    1.471 GB/s (error margin: 0.054 GB/s)
-RapidJSON                               	:    4.698 cycles per input byte (best)    5.065 cycles per input byte (avg)    0.725 GB/s (error margin: 0.053 GB/s)
-RapidJSON (insitu)                      	:    5.433 cycles per input byte (best)    5.486 cycles per input byte (avg)    0.627 GB/s (error margin: 0.006 GB/s)
-sajson (dynamic mem)                    	:    4.060 cycles per input byte (best)    4.251 cycles per input byte (avg)    0.839 GB/s (error margin: 0.038 GB/s)
-sajson                                  	:    3.630 cycles per input byte (best)    3.699 cycles per input byte (avg)    0.939 GB/s (error margin: 0.017 GB/s)
-memcpy                                  	:    0.107 cycles per input byte (best)    0.109 cycles per input byte (avg)   31.699 GB/s (error margin: 0.656 GB/s)
+getline                                 	:    3.480 cycles per input byte (best)    3.486 cycles per input byte (avg)    0.979 GB/s (error margin: 0.002 GB/s)
+simdjson (dynamic mem)                  	:    2.285 cycles per input byte (best)    2.377 cycles per input byte (avg)    1.491 GB/s (error margin: 0.058 GB/s)
+simdjson                                	:    2.277 cycles per input byte (best)    2.304 cycles per input byte (avg)    1.496 GB/s (error margin: 0.018 GB/s)
+RapidJSON                               	:    5.597 cycles per input byte (best)    5.637 cycles per input byte (avg)    0.609 GB/s (error margin: 0.004 GB/s)
+RapidJSON (accurate number parsing)     	:   10.311 cycles per input byte (best)   10.329 cycles per input byte (avg)    0.330 GB/s (error margin: 0.001 GB/s)
+RapidJSON (insitu)                      	:    5.994 cycles per input byte (best)    6.018 cycles per input byte (avg)    0.568 GB/s (error margin: 0.002 GB/s)
+RapidJSON (insitu, accurate number parsing)	:   10.520 cycles per input byte (best)   10.550 cycles per input byte (avg)    0.324 GB/s (error margin: 0.001 GB/s)
+sajson (dynamic mem)                    	:    5.080 cycles per input byte (best)    5.169 cycles per input byte (avg)    0.671 GB/s (error margin: 0.012 GB/s)
+sajson                                  	:    4.374 cycles per input byte (best)    4.415 cycles per input byte (avg)    0.779 GB/s (error margin: 0.007 GB/s)
+nlohmann-json                           	:   31.902 cycles per input byte (best)   31.962 cycles per input byte (avg)    0.107 GB/s (error margin: 0.000 GB/s)
+memcpy                                  	:    0.107 cycles per input byte (best)    0.108 cycles per input byte (avg)   31.699 GB/s (error margin: 0.237 GB/s)
 
  
  <doing additional analysis with performance counters (Linux only)>
-simdjson : cycles    3959192 instructions   14218205 branchmisses      13280 cacheref     183898 cachemisses       7497  bytespercachemiss        119 inspercycle        3.6 insperbyte        9.0
-RapidJSON: cycles    8568024 instructions   26883679 branchmisses      18133 cacheref     111649 cachemisses       2709  bytespercachemiss         87 inspercycle        3.1 insperbyte       17.0
-sajson   : cycles    6238832 instructions   23439788 branchmisses      15872 cacheref     117943 cachemisses       6788  bytespercachemiss         99 inspercycle        3.8 insperbyte       14.9
+simdjson : cycles    3941841 instructions   12531618 branchmisses      13537 cacheref     194935 cachemisses       2590  bytespercachemiss        117 inspercycle        3.2 insperbyte        7.9
+RapidJSON: cycles    9248129 instructions   26938363 branchmisses      17722 cacheref     116172 cachemisses       1483  bytespercachemiss         89 inspercycle        2.9 insperbyte       17.1
+sajson   : cycles    7486825 instructions   24696100 branchmisses      15231 cacheref     124963 cachemisses       2108  bytespercachemiss        104 inspercycle        3.3 insperbyte       15.7
+
+
