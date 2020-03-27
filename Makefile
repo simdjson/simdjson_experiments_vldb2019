@@ -7,6 +7,13 @@ checkht:
 
 .PHONY: checkht
 
+
+growing: 
+	cd experiments/growing && docker build -t growing .
+	$(eval outputdir:=$(PWD)/results/$(nodename)/growing)
+	mkdir -p $(outputdir)
+	docker run --privileged -v $(outputdir):/results growing
+	@echo "results have been copied to $(outputdir)"
 turbo: 
 	cd experiments/turbo && docker build -t turbo .
 	$(eval outputdir:=$(PWD)/results/$(nodename)/turbo)
