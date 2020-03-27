@@ -9,11 +9,15 @@ checkht:
 
 
 growing: 
-	cd experiments/growing && docker build -t growing .
+	git submodule update --init --recursive
+	cd library/simdjson && make clean && cd ../..
+	docker build  -f experiments/growing/Dockerfile -t growing .
 	$(eval outputdir:=$(PWD)/results/$(nodename)/growing)
+	@echo $(outputdir)
 	mkdir -p $(outputdir)
 	docker run --privileged -v $(outputdir):/results growing
 	@echo "results have been copied to $(outputdir)"
+
 turbo: 
 	cd experiments/turbo && docker build -t turbo .
 	$(eval outputdir:=$(PWD)/results/$(nodename)/turbo)
