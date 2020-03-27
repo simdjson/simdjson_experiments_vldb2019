@@ -1,18 +1,18 @@
 name                                            cycles_per_byte  cycles_per_byte_err             gb_per_s         gb_per_s_err 
-"simdjson                                "                2.233                0.052                1.526                0.035 
-"RapidJSON                               "                5.448                0.070                0.625                0.008 
-"RapidJSON (accurate number parsing)     "               10.910                0.047                0.312                0.001 
-"RapidJSON (insitu)                      "                6.368                0.017                0.535                0.001 
-"RapidJSON (insitu, accurate number parsing)"               10.337                0.044                0.330                0.001 
-"sajson (dynamic mem)                    "                6.645                0.325                0.513                0.024 
-"sajson                                  "                4.463                0.036                0.763                0.006 
-"nlohmann-json                           "               31.019                0.058                0.110                0.000 
-"dropbox (json11)                        "               26.236                0.046                0.130                0.000 
-"fastjson                                "               11.600                0.236                0.294                0.006 
-"gason                                   "                4.135                0.613                0.824                0.106 
-"ultrajson                               "                7.201                0.031                0.473                0.002 
-"jsmn                                    "               35.270                0.028                0.097                0.000 
-"cJSON                                   "               27.433                0.147                0.124                0.001 
-"jsoncpp                                 "               47.442                3.834                0.072                0.005 
+"simdjson                                "                2.263                0.048                1.506                0.031 
+"RapidJSON                               "                5.469                0.061                0.623                0.007 
+"RapidJSON (accurate number parsing)     "               10.887                0.086                0.313                0.002 
+"RapidJSON (insitu)                      "                6.368                0.018                0.535                0.002 
+"RapidJSON (insitu, accurate number parsing)"               10.353                0.029                0.329                0.001 
+"sajson (dynamic mem)                    "                6.634                0.375                0.514                0.027 
+"sajson                                  "                4.464                0.034                0.763                0.006 
+"nlohmann-json                           "               30.747                0.069                0.111                0.000 
+"dropbox (json11)                        "               26.240                0.091                0.130                0.000 
+"fastjson                                "               11.559                0.230                0.295                0.006 
+"gason                                   "                4.141                0.613                0.823                0.106 
+"ultrajson                               "                7.218                0.028                0.472                0.002 
+"jsmn                                    "               36.799                0.297                0.093                0.001 
+"cJSON                                   "               27.360                0.214                0.125                0.001 
+"jsoncpp                                 "               47.599                3.646                0.072                0.005 
 
 
